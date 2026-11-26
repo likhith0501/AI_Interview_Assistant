@@ -6,7 +6,7 @@ st.caption('Practice interviews with AI-generated questions and constructive fee
 st.caption(' lanchued by LIKHITH HP')
 st.write("Deparement of AI&DS")
 try:
-    client = Groq(api_key=st.secrets['GROQ_API_KEY'])
+    client = Groq(api_key=st.secrets['GROQ_API_KEY=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'])
     st.write("API connection successful")
 except (KeyError, FileNotFoundError):
     st.error('GROQ_API_KEY is missing. Add it to Streamlit Cloud → App settings → Secrets.')

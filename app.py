@@ -21,6 +21,7 @@ role = st.selectbox("select Job Role",[
                     "Software Engineer",
                     "HR Executive"
                     ])
+diff = st.selectbox("select difficultly level",["beginer","advance","pro"])
 if st.button("Generate Interview Questions"):
     prompt = f"Generate 5 interview questions for the role of {role}."
 
@@ -37,5 +38,8 @@ if st.button("Generate Interview Questions"):
 
     output = response.choices[0].message.content
     st.write(output)
+    
+
+
 
  
